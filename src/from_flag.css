@@ -1,0 +1,1275 @@
+.App {
+    /* text-align: center; */
+    background-color: #7391cc;
+    /* background-color: #282c34; */
+    /* min-height: 100vh; */
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* font-size: calc(10px + 2vmin); */
+    /* color: darkgray; */
+}
+
+.FLAG {
+    margin: 1em;
+    height: 150px;
+    width: 200px;
+    float: left;
+    /* overflow: hidden; */
+}
+
+.belgium {
+    background: linear-gradient( to right, black 33%, yellow 33%, yellow 66%, red 66%);
+}
+
+.spain {
+    background: linear-gradient( to bottom, red 25%, yellow 25%, yellow 75%, red 75%);
+}
+
+.czech {
+    background: linear-gradient(to bottom, white 50%, red 50%);
+}
+
+.czech .triangle {
+    width: 0;
+    height: 0;
+    border-left: 75px solid blue;
+    border-top: 75px solid transparent;
+    border-bottom: 75px solid transparent;
+}
+
+.denmark {
+    background: linear-gradient( to right, rgba(255, 255, 255, 0) 25%, white 25%, white 33%, rgba(255, 255, 255, 0) 33%), linear-gradient(to bottom, red 45%, white 45%, white 55%, red 55%);
+}
+
+.cuba {
+    background: linear-gradient( to bottom, royalblue 20%, white 20%, white 40%, royalblue 40%, royalblue 60%, white 60%, white 80%, royalblue 80%, royalblue 80%);
+}
+
+.cuba .triangle {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 100px solid red;
+    border-top: 75px solid transparent;
+    border-bottom: 75px solid transparent;
+}
+
+.cuba .triangle .star-wrap {
+    position: absolute;
+    left: -160px;
+    top: -85px;
+    transform: scale(0.25);
+}
+
+.cuba .triangle .star-wrap .star {
+    margin: 50px 0;
+    position: relative;
+    display: block;
+    color: red;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid white;
+    border-left: 100px solid transparent;
+    transform: rotate(35deg);
+}
+
+.cuba .triangle .star-wrap .star::before {
+    border-bottom: 80px solid white;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -45px;
+    left: -65px;
+    display: block;
+    content: "";
+    transform: rotate(-35deg);
+}
+
+.cuba .triangle .star-wrap .star::after {
+    position: absolute;
+    display: block;
+    color: red;
+    top: 3px;
+    left: -105px;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid white;
+    border-left: 100px solid transparent;
+    content: "";
+    transform: rotate(-70deg);
+}
+
+.china {
+    background-color: red;
+}
+
+.china .star1,
+.china .star2,
+.china .star3,
+.china .star4,
+.china .star5 {
+    position: relative;
+}
+
+.china .star1 {
+    top: -50px;
+    left: -65px;
+    transform: scale(0.2);
+}
+
+.china .star2 {
+    left: -30px;
+    top: -190px;
+}
+
+.china .star3 {
+    left: -10px;
+    top: -295px;
+}
+
+.china .star4 {
+    left: -10px;
+    top: -394px;
+}
+
+.china .star5 {
+    left: -30px;
+    top: -500px;
+}
+
+.china .star2,
+.china .star3,
+.china .star4,
+.china .star5 {
+    transform: scale(0.08);
+}
+
+.china .inner-star {
+    margin: 50px 0;
+    position: relative;
+    display: block;
+    color: red;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid yellow;
+    border-left: 100px solid transparent;
+    transform: rotate(35deg);
+}
+
+.china .inner-star::before {
+    border-bottom: 80px solid yellow;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -45px;
+    left: -65px;
+    display: block;
+    content: "";
+    transform: rotate(-35deg);
+}
+
+.china .inner-star::after {
+    position: absolute;
+    display: block;
+    color: red;
+    top: 3px;
+    left: -105px;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid yellow;
+    border-left: 100px solid transparent;
+    content: "";
+    transform: rotate(-70deg);
+}
+
+.greenland {
+    background: linear-gradient(to bottom, white 50%, red 50%);
+}
+
+.greenland::after {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: block;
+    position: relative;
+    top: 50%;
+    margin-top: -35px;
+    left: 20%;
+    content: "";
+    background: linear-gradient(to bottom, red 50%, white 50%);
+}
+
+.congo {
+    background: linear-gradient( 146deg, #368ee0 43%, yellow 43%, yellow 48%, red 48%, red 58%, yellow 58%, yellow 63%, #368ee0 63%);
+}
+
+.congo .star {
+    position: relative;
+    top: -40px;
+    left: -55px;
+    transform: scale(0.25);
+}
+
+.congo .star .inner-star {
+    margin: 50px 0;
+    position: relative;
+    display: block;
+    color: red;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid yellow;
+    border-left: 100px solid transparent;
+    transform: rotate(35deg);
+}
+
+.congo .star .inner-star::before {
+    border-bottom: 80px solid yellow;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -45px;
+    left: -65px;
+    display: block;
+    content: "";
+    transform: rotate(-35deg);
+}
+
+.congo .star .inner-star::after {
+    position: absolute;
+    display: block;
+    color: red;
+    top: 3px;
+    left: -105px;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid yellow;
+    border-left: 100px solid transparent;
+    content: "";
+    transform: rotate(-70deg);
+}
+
+.qatar {
+    background: linear-gradient(to right, white 30%, #a72215 30%);
+    position: relative;
+    overflow: hidden;
+}
+
+.qatar .triangle1,
+.qatar .triangle2,
+.qatar .triangle3,
+.qatar .triangle4,
+.qatar .triangle5,
+.qatar .triangle6,
+.qatar .triangle7,
+.qatar .triangle8,
+.qatar .triangle9 {
+    width: 0;
+    height: 0;
+    position: relative;
+    border-top: 25px solid transparent;
+    border-left: 110px solid white;
+    border-bottom: 25px solid transparent;
+}
+
+.qatar .triangle1 {
+    top: -1px;
+    border-top: none;
+}
+
+.qatar .triangle2 {
+    top: -28px;
+}
+
+.qatar .triangle3 {
+    top: -56px;
+}
+
+.qatar .triangle4 {
+    top: -83px;
+}
+
+.qatar .triangle5 {
+    top: -110px;
+}
+
+.qatar .triangle6 {
+    top: -137px;
+}
+
+.qatar .triangle7 {
+    top: -162px;
+}
+
+.qatar .triangle8 {
+    border-bottom: none;
+    top: -186px;
+}
+
+.jamaica {
+    background: yellow;
+}
+
+.jamaica::before,
+.jamaica::after,
+.jamaica .triangleL,
+.jamaica .triangleR {
+    position: relative;
+    width: 0;
+    height: 0;
+}
+
+.jamaica::before,
+.jamaica::after {
+    content: "";
+    left: 11px;
+    border-left: 88px solid transparent;
+    border-right: 88px solid transparent;
+}
+
+.jamaica::before {
+    top: 65px;
+    border-top: 65px solid green;
+}
+
+.jamaica::after {
+    bottom: 201px;
+    border-bottom: 67px solid green;
+}
+
+.jamaica .triangleL,
+.jamaica .triangleR {
+    border-top: 62px solid transparent;
+    border-bottom: 62px solid transparent;
+}
+
+.jamaica .triangleL {
+    border-left: 85px solid black;
+    top: -5px;
+}
+
+.jamaica .triangleR {
+    border-right: 85px solid black;
+    right: -114px;
+    top: -128px;
+}
+
+.VC {
+    background: linear-gradient( to right, blue 27%, yellow 27%, yellow 73%, green 73%);
+}
+
+.VC .caro1,
+.VC .caro2,
+.VC .caro3 {
+    transform: scale(0.3);
+    position: relative;
+}
+
+.VC .caro1 {
+    left: -5px;
+}
+
+.VC .caro2 {
+    left: 36px;
+    top: -130px;
+}
+
+.VC .caro3 {
+    left: 15px;
+    top: -230px;
+}
+
+.VC .caro {
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom: 80px solid green;
+    position: relative;
+    top: -50px;
+}
+
+.VC .caro::after {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 78px;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top: 80px solid green;
+}
+
+.scotland {
+    background: linear-gradient( 144deg, transparent 45%, transparent 45%, white 45%, white 45%, white 55%, transparent 55%, transparent 55%), linear-gradient( 37deg, royalblue 45%, royalblue 45%, #ffffff 45%, #ffffff 45%, #ffffff 55%, royalblue 55%, royalblue 55%);
+}
+
+.pakistan {
+    background: linear-gradient(to right, white 25%, #01411c 25%);
+    position: relative;
+}
+
+.pakistan::before,
+.pakistan::after {
+    content: "";
+    position: absolute;
+}
+
+.pakistan::before {
+    background: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    left: 40%;
+    top: 20%;
+}
+
+.pakistan::after {
+    background: #01411c;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    left: 48%;
+    top: 13%;
+}
+
+.pakistan .star {
+    z-index: 500;
+    position: relative;
+    display: block;
+    width: 0px;
+    height: 0px;
+    left: 50px;
+    top: 20px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid white;
+    border-left: 100px solid transparent;
+    transform: rotate(20deg) scale(0.2);
+}
+
+.pakistan .star::before {
+    border-bottom: 80px solid white;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -45px;
+    left: -65px;
+    display: block;
+    content: "";
+    transform: rotate(-35deg);
+}
+
+.pakistan .star::after {
+    position: absolute;
+    display: block;
+    color: red;
+    top: 3px;
+    left: -105px;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid white;
+    border-left: 100px solid transparent;
+    content: "";
+    transform: rotate(-70deg);
+}
+
+.christies {
+    background-color: red !important;
+    background: radial-gradient( ellipse at center, yellow 50%, yellow 50%, red 50%);
+    background-size: 65px 65px;
+    background-repeat: repeat-x;
+    background-position: 3px;
+}
+
+.korea {
+    background: white;
+    position: relative;
+}
+
+.korea .umyang {
+    position: absolute;
+    background: linear-gradient(to bottom, red 50%, blue 50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    top: 35px;
+    left: 50%;
+    margin-left: -40px;
+    transform: rotate(20deg);
+}
+
+.korea .umyang::before,
+.korea .umyang::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 20px;
+}
+
+.korea .umyang::before {
+    background: red;
+}
+
+.korea .umyang::after {
+    background: blue;
+    right: 0;
+}
+
+.korea span {
+    position: absolute;
+    display: block;
+    font-size: 2rem;
+    top: -15px;
+}
+
+.korea span:first-child {
+    /* left: 90px; */
+    left: 15%;
+    top: 7%;
+    color: red;
+    transform: rotate(125deg);
+}
+
+.korea span:nth-child(2) {
+    color: green;
+    /* right: 90px; */
+    top: 7%;
+    right: 15%;
+    transform: rotate(-125deg);
+}
+
+.korea span:nth-child(3) {
+    color: orange;
+    /* right: 90px; */
+    top: 60%;
+    right: 15%;
+    transform: rotate(125deg);
+}
+
+.korea span:nth-child(4) {
+    color: skyblue;
+    /* right: 90px; */
+    top: 60%;
+    left: 15%;
+    transform: rotate(-125deg);
+}
+
+.taiwan {
+    background: red;
+    position: relative;
+}
+
+.taiwan::after {
+    content: "";
+    display: block;
+    background: blue;
+    width: 100px;
+    height: 75px;
+}
+
+.taiwan .sun {
+    z-index: 400;
+    position: absolute;
+    left: -45px;
+    top: -58px;
+    width: 190px;
+    height: 190px;
+    transform: scale(0.3);
+}
+
+.taiwan .sun .tr {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 50px solid white;
+    position: absolute;
+    z-index: 8000;
+}
+
+.taiwan .sun .tr1 {
+    left: 80px;
+}
+
+.taiwan .sun .tr2 {
+    left: 80px;
+    bottom: 0;
+    transform: rotate(180deg);
+}
+
+.taiwan .sun .tr3 {
+    transform: rotate(90deg);
+    top: 71px;
+    right: 10px;
+}
+
+.taiwan .sun .tr4 {
+    transform: rotate(-90deg);
+    top: 71px;
+    left: 10px;
+}
+
+.taiwan .sun .tr5 {
+    transform: rotate(60deg);
+    right: 19px;
+    top: 36px;
+}
+
+.taiwan .sun .tr6 {
+    transform: rotate(-60deg);
+    left: 19px;
+    top: 36px;
+}
+
+.taiwan .sun .tr7 {
+    transform: rotate(30deg);
+    right: 46px;
+    top: 12px;
+}
+
+.taiwan .sun .tr8 {
+    left: 46px;
+    top: 12px;
+    transform: rotate(-30deg);
+}
+
+.taiwan .sun .tr9 {
+    transform: rotate(120deg);
+    right: 20px;
+    bottom: 34px;
+}
+
+.taiwan .sun .tr10 {
+    transform: rotate(-120deg);
+    left: 20px;
+    bottom: 34px;
+}
+
+.taiwan .sun .tr11 {
+    transform: rotate(150deg);
+    right: 46px;
+    bottom: 11px;
+}
+
+.taiwan .sun .tr12 {
+    transform: rotate(-150deg);
+    left: 46px;
+    bottom: 11px;
+}
+
+.taiwan .sun .circle {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background: white;
+    border: 6px solid blue;
+    z-index: 9999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -54px 0 0 -54px;
+}
+
+.ab {
+    background: black;
+    position: relative;
+}
+
+.ab::before,
+.ab::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 200px;
+}
+
+.ab::before {
+    background: white;
+    height: 60px;
+    bottom: 0;
+}
+
+.ab::after {
+    background: blue;
+    height: 33px;
+    z-index: 400;
+    bottom: 60px;
+}
+
+.ab .triangle-bl {
+    position: absolute;
+    z-index: 500;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    border-bottom: 150px solid red;
+    border-right: 100px solid transparent;
+}
+
+.ab .triangle-br {
+    z-index: 500;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 150px solid red;
+    border-left: 100px solid transparent;
+    bottom: 0;
+    right: 0;
+}
+
+.ab .sun {
+    z-index: 400;
+    position: absolute;
+    left: 4px;
+    top: -44px;
+    width: 190px;
+    height: 190px;
+    transform: scale(0.5);
+}
+
+.ab .sun .tr {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 70px solid yellow;
+    position: absolute;
+    z-index: 8000;
+}
+
+.ab .sun .tr1 {
+    left: 80px;
+    top: 8px;
+}
+
+.ab .sun .tr2 {
+    transform: rotate(90deg);
+    top: 71px;
+    right: 10px;
+}
+
+.ab .sun .tr3 {
+    transform: rotate(-90deg);
+    top: 71px;
+    left: 10px;
+}
+
+.ab .sun .tr4 {
+    transform: rotate(23deg);
+    top: 17px;
+    right: 52px;
+}
+
+.ab .sun .tr5 {
+    transform: rotate(-23deg);
+    top: 17px;
+    left: 52px;
+}
+
+.ab .sun .tr6 {
+    transform: rotate(45deg);
+    top: 28px;
+    right: 28px;
+}
+
+.ab .sun .tr7 {
+    transform: rotate(-45deg);
+    top: 28px;
+    left: 28px;
+}
+
+.ab .sun .tr8 {
+    transform: rotate(68deg);
+    top: 48px;
+    right: 15px;
+}
+
+.ab .sun .tr9 {
+    transform: rotate(-68deg);
+    top: 48px;
+    left: 15px;
+}
+
+.ab .sun .circle {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: yellow;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    margin: -20px 0 0 -40px;
+}
+
+.canada {
+    background: linear-gradient(to right, red 25%, white 25%, white 75%, red 75%);
+    position: relative;
+}
+
+.canada .maple {
+    position: relative;
+    -webkit-transform: scale(0.25);
+    transform: scale(0.23);
+    top: 40px;
+}
+
+.canada .maple .leaf1 {
+    position: absolute;
+    left: 20px;
+    border-top: 200px solid red;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    height: 0;
+    width: 100px;
+    top: 15px;
+}
+
+.canada .maple .leaf1::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -205px;
+    left: -30px;
+    width: 0;
+    height: 0;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-top: 40px solid white;
+}
+
+.canada .maple .leaf1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid red;
+    top: -260px;
+    left: 2px;
+}
+
+.canada .maple .right {
+    position: absolute;
+    -webkit-transform: rotate(65deg);
+    transform: rotate(65deg);
+    top: 40px;
+    right: -70px;
+}
+
+.canada .maple .right .side-leaf {
+    position: relative;
+    border-top: 220px solid red;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    height: 0;
+    width: 100px;
+    -webkit-transform: scale(0.65);
+    transform: scale(0.65);
+}
+
+.canada .maple .right .side-leaf::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -222px;
+    left: -38px;
+    width: 0;
+    height: 0;
+    border-left: 90px solid transparent;
+    border-right: 90px solid transparent;
+    border-top: 50px solid white;
+}
+
+.canada .maple .right .side-leaf::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid red;
+    top: -260px;
+    left: 2px;
+}
+
+.canada .maple .left {
+    position: absolute;
+    -webkit-transform: rotate(-65deg);
+    transform: rotate(-65deg);
+    top: 40px;
+    left: -70px;
+}
+
+.canada .maple .left .side-leaf {
+    position: relative;
+    border-top: 220px solid red;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    height: 0;
+    width: 100px;
+    -webkit-transform: scale(0.65);
+    transform: scale(0.65);
+}
+
+.canada .maple .left .side-leaf::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -222px;
+    left: -38px;
+    width: 0;
+    height: 0;
+    border-left: 90px solid transparent;
+    border-right: 90px solid transparent;
+    border-top: 50px solid white;
+}
+
+.canada .maple .left .side-leaf::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid red;
+    top: -260px;
+    left: 2px;
+}
+
+.canada .stem {
+    position: absolute;
+    top: -210px;
+    border-bottom: 600px solid red;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    height: 0;
+    width: 100px;
+    -webkit-transform: scale(0.04);
+    transform: scale(0.04);
+}
+
+.canada .stem::after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-bottom: 300px solid red;
+    border-left: 250px solid transparent;
+    border-right: 250px solid transparent;
+    height: 0;
+    width: 450px;
+    top: 10px;
+    left: -420px;
+}
+
+.south-africa {
+    position: relative;
+    overflow: hidden;
+    background: -webkit-linear-gradient( top, red 0%, red 33.3%, white 33.3%, white 66.6%, violet 66.6%, violet 100%);
+    background: linear-gradient( to bottom, red 0%, red 33.3%, white 33.3%, white 66.6%, navy 66.6%, navy 100%);
+}
+
+.south-africa::after {
+    content: "";
+    background: green;
+    width: 120px;
+    height: 26px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 63px;
+}
+
+.south-africa .corner {
+    width: 85px;
+    height: 85px;
+    background: black;
+    box-shadow: 0 0 0 12px yellow, 0 0 0 38px green, 0 0 0 50px white;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 34px;
+    left: -55px;
+}
+
+.swiss {
+    background: red;
+    position: relative;
+}
+
+.swiss::before,
+.swiss::after {
+    content: "";
+    position: absolute;
+    background: white;
+}
+
+.swiss::before {
+    height: 80px;
+    width: 30px;
+    left: 85px;
+    top: 35px;
+}
+
+.swiss::after {
+    width: 80px;
+    height: 30px;
+    left: 60px;
+    top: 60px;
+}
+
+.india {
+    position: relative;
+    background: linear-gradient( to bottom, orange 33%, white 33%, white 66%, white 66%, green 66%);
+}
+
+.india .inner-circle {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: radial-gradient( ellipse at center, blue 10%, white 10%, white 65%, blue 65%);
+    top: -27px;
+    left: 0ps;
+    -webkit-transform: scale(0.2);
+    transform: scale(0.2);
+}
+
+.india .inner-circle .diamond {
+    width: 0;
+    height: 0;
+    border: 4px solid transparent;
+    border-bottom: 70px solid blue;
+    position: absolute;
+}
+
+.india .inner-circle .diamond::after {
+    content: "";
+    position: absolute;
+    left: -4px;
+    top: 70px;
+    width: 0;
+    height: 0;
+    border: 4px solid transparent;
+    border-top: 16px solid blue;
+}
+
+.india .inner-circle .diamond1 {
+    top: 0px;
+    left: 96px;
+}
+
+.india .inner-circle .diamond2 {
+    top: 5px;
+    right: 72px;
+    -webkit-transform: rotate(22.5deg);
+    transform: rotate(22.5deg);
+}
+
+.india .inner-circle .diamond3 {
+    top: 18px;
+    right: 51px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.india .inner-circle .diamond4 {
+    top: 39px;
+    right: 39px;
+    -webkit-transform: rotate(67.5deg);
+    transform: rotate(67.5deg);
+}
+
+.india .inner-circle .diamond5 {
+    top: 63px;
+    right: 33px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.india .inner-circle .diamond6 {
+    top: 86px;
+    right: 38px;
+    -webkit-transform: rotate(112.5deg);
+    transform: rotate(112.5deg);
+}
+
+.india .inner-circle .diamond7 {
+    top: 108px;
+    right: 51px;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.india .inner-circle .diamond8 {
+    bottom: 5px;
+    right: 72px;
+    -webkit-transform: rotate(157.5deg);
+    transform: rotate(157.5deg);
+}
+
+.india .inner-circle .diamond9 {
+    bottom: 0px;
+    left: 96px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.india .inner-circle .diamond10 {
+    bottom: 5px;
+    left: 72px;
+    -webkit-transform: rotate(202.5deg);
+    transform: rotate(202.5deg);
+}
+
+.india .inner-circle .diamond11 {
+    top: 108px;
+    left: 51px;
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg);
+}
+
+.india .inner-circle .diamond12 {
+    top: 87px;
+    left: 38px;
+    -webkit-transform: rotate(247.5deg);
+    transform: rotate(247.5deg);
+}
+
+.india .inner-circle .diamond13 {
+    top: 63px;
+    left: 33px;
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
+.india .inner-circle .diamond14 {
+    top: 39px;
+    left: 38px;
+    -webkit-transform: rotate(292.5deg);
+    transform: rotate(292.5deg);
+}
+
+.india .inner-circle .diamond15 {
+    top: 18px;
+    left: 51px;
+    -webkit-transform: rotate(315deg);
+    transform: rotate(315deg);
+}
+
+.india .inner-circle .diamond16 {
+    top: 5px;
+    left: 72px;
+    -webkit-transform: rotate(337.5deg);
+    transform: rotate(337.5deg);
+}
+
+.india .inner-circle .dot {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: blue;
+    border-radius: 50%;
+}
+
+.india .inner-circle .dot1 {
+    left: 74px;
+    top: 3px;
+}
+
+.india .inner-circle .dot2 {
+    right: 74px;
+    top: 3px;
+}
+
+.india .inner-circle .dot3 {
+    left: 43px;
+    top: 17px;
+}
+
+.india .inner-circle .dot4 {
+    right: 43px;
+    top: 17px;
+}
+
+.india .inner-circle .dot5 {
+    left: 17px;
+    top: 41px;
+}
+
+.india .inner-circle .dot6 {
+    right: 17px;
+    top: 41px;
+}
+
+.india .inner-circle .dot7 {
+    left: 3px;
+    top: 75px;
+}
+
+.india .inner-circle .dot8 {
+    right: 3px;
+    top: 75px;
+}
+
+.india .inner-circle .dot9 {
+    left: 3px;
+    bottom: 75px;
+}
+
+.india .inner-circle .dot10 {
+    right: 3px;
+    bottom: 75px;
+}
+
+.india .inner-circle .dot11 {
+    left: 17px;
+    bottom: 41px;
+}
+
+.india .inner-circle .dot12 {
+    right: 17px;
+    bottom: 41px;
+}
+
+.india .inner-circle .dot13 {
+    left: 43px;
+    bottom: 17px;
+}
+
+.india .inner-circle .dot14 {
+    right: 43px;
+    bottom: 17px;
+}
+
+.india .inner-circle .dot15 {
+    left: 74px;
+    bottom: 3px;
+}
+
+.india .inner-circle .dot16 {
+    right: 74px;
+    bottom: 3px;
+}
