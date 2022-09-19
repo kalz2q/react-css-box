@@ -7,7 +7,9 @@ function App() {
   })
   return (
     <div className="App">
-      <div className="BOX box1"></div>
+      <div className="BOX box1">
+        <div className="innerbox"></div>
+      </div>
     </div>
   );
 }
