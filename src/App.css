@@ -1,66 +1,69 @@
 .App {
-    text-align: center;
-    /* background-color: #282c34; */
-    /* min-height: 100vh; */
-    display: flex;
-    flex-wrap: wrap;
-    /* flex-direction: column; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* font-size: calc(10px + 2vmin); */
-    /* color: white; */
+  text-align: center;
+  /* background-color: #282c34; */
+  /* min-height: 100vh; */
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* font-size: calc(10px + 2vmin); */
+  /* color: white; */
 }
 
 .BOX {
-    margin: 1em;
-    height: 200px;
-    width: 200px;
-    float: left;
+  margin: 1em;
+  height: 200px;
+  width: 200px;
+  float: left;
 }
 
 .box1 {
-    background-color: skyblue;
-    position: relative;
-    overflow: hidden;
+  background-color: skyblue;
+  position: relative;
+  /* overflow: hidden; */
 }
 
 .box1 .innerbox {
-    width: 0;
-    height: 0;
-    border-bottom: 173px solid black;
-    border-right: 100px solid transparent;
-    border-left: 100px solid transparent;
-    position: absolute;
-    left: -15%;
-    transform: scale(0.8) rotate(45deg);
+  width: 0;
+  height: 0;
+  border-bottom: 173px solid black;
+  border-right: 100px solid transparent;
+  border-left: 100px solid transparent;
+  position: absolute;
+  left: -15%;
+  transform: scale(0.8) rotate(45deg);
 }
 
 .box2 {
-    background-color: skyblue;
-    position: relative;
-    overflow: hidden;
+  background-color: skyblue;
+  position: relative;
+  /* overflow: hidden; */
 }
 
 .box2 .triangle {
-    width: 0;
-    height: 0;
-    border-bottom: 173px solid orange;
-    border-right: 100px solid transparent;
-    border-left: 100px solid transparent;
-    position: absolute;
-
+  width: 0;
+  height: 0;
+  border-bottom: 173px solid orange;
+  border-right: 100px solid transparent;
+  border-left: 100px solid transparent;
+  position: absolute;
+  /* transform: translate(-100%, 50%); */
 }
+
 @media (prefers-reduced-motion: no-preference) {
-    .box2 .triangle  {
-      animation: App-logo-spin infinite 10s linear;
-    }
+  .box2 .triangle {
+    animation: App-logo-spin infinite 10s linear;
   }
+}
 
 @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
+    /* transform: translate(-100%, 50%) rotate(0deg) translate(100%, -50%); */
   }
+  to {
+    transform: rotate(360deg);
+    /* transform: translate(-100%, 50%) rotate(360deg) translate(100%, -50%); */
+  }
+}
