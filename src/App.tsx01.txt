@@ -10,9 +10,6 @@ function App() {
       <div className="BOX box1">
         <div className="innerbox"></div>
       </div>
-      <div className="BOX box2">
-        <div className="triangle"></div>
-      </div>
     </div>
   );
 }
